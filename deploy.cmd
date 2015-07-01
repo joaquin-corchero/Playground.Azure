@@ -89,8 +89,8 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
 :: ----------
 :: ----------
 ::Run unit tests
-call :ExecuteCmd "%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\Playground.Azure.Web.Tests\Playground.Azure.Web.Tests.csproj" /t:rebuild
-vstest.console.exe "%DEPLOYMENT_SOURCE%\Playground.Azure.Web.Tests\bin\Release\Playground.Azure.Web.Tests.dll"
+call :ExecuteCmd "%MSBUILD_PATH%" "%DEPLOYMENT_SOURCE%\Playground.Azure.Web.Tests\Playground.Azure.Web.Tests.csproj" /t:rebuild /verbosity:m
+vstest.console.exe "%DEPLOYMENT_SOURCE%\Playground.Azure.Web.Tests\bin\Debug\Playground.Azure.Web.Tests.dll"
 ::Finished running unit tests
 :: ----------
 :: ----------
