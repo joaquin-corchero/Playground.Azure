@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.22823.1
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Azure.Web", "Playground.Azure.Web\Playground.Azure.Web.csproj", "{DFB37282-FEA6-44E6-9DFE-D9CDF5432FAD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playground.Azure.Web.Tests", "Playground.Azure.Web.Tests\Playground.Azure.Web.Tests.csproj", "{3CB7B59C-0384-4DA5-A4AA-B36423121DCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure Commands", "Azure Commands", "{0B0D3085-41D3-4857-8F63-E077F2B4B238}"
+	ProjectSection(SolutionItems) = preProject
+		.deployment = .deployment
+		deploy.cmd = deploy.cmd
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
